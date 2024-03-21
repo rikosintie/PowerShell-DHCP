@@ -7,6 +7,8 @@ Open in excel and change the existing subnet to the new subnet.
 Run Create-Reservations.ps1 to add the reservations to the new dhcp scope.
 To display the CSV on screen
 Import-Csv .\DHCPRes.csv | ft
+You will need to be in the dhcp administator group and run  Set-ExecutionPolicy Unrestricted 
+to allow the unsigned script to run.
 #>
 
 function bulkDHCPReservations{
