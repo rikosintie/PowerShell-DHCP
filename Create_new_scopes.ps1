@@ -1,4 +1,7 @@
-# Import the CSV file. It must be in the same directory as the script
+# https://learn.microsoft.com/en-us/powershell/module/dhcpserver/add-dhcpserverv4scope?view=windowsserver2022-ps
+# https://learn.microsoft.com/en-us/powershell/module/dhcpserver/add-dhcpserverv4scope?view=windowsserver2022-ps
+
+# Import the CSV file. If it's in the same directory as the script, use just the file name
 $scopes = Import-Csv -Path "home-DHCP-Data.csv"
 <#
 To add multiple dns server serparate the ip address or hostnames with a hypen
